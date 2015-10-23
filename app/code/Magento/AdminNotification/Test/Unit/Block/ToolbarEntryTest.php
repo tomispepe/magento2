@@ -33,7 +33,7 @@ class ToolbarEntryTest extends \PHPUnit_Framework_TestCase
         $notificationList->expects($this->any())->method('getSize')->will($this->returnValue($unreadNotifications));
 
         $block = $objectManagerHelper->getObject(
-            'Magento\AdminNotification\Block\TolbarEntry',
+            'Magento\AdminNotification\Block\ToolbarEntry',
             ['notificationList' => $notificationList]
         );
 
